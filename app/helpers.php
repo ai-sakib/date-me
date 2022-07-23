@@ -31,7 +31,7 @@ function fileInfo($file)
 }
 function fileUpload($file,$destination,$name)
 {
-    $upload=$file->move(public_path('/'.$destination), $name);
+    $upload=$file->move(asset('/'.$destination), $name);
     return $upload;
 }
 
